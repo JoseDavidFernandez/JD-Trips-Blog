@@ -1,0 +1,317 @@
+/*-----------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------- RESPONSIVE -----------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 600px) {
+    .aboutWrap { margin: 5vh !important; }
+    .ultimos_viajesRealizados{ max-height: 100%; }
+    .utlimosViajes_Wrap{ flex-direction: column; }
+    .ultimaCiudad.Ciudad2, .ultimaCiudad.Ciudad4 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .ultimaCiudad h5{  margin: 20px 0px !important; }
+    .Ciudad5{display: none;}
+}
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------- GLOBAL STYLES --------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------*/
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: #e7edf3;
+    background: #032431;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+p{ text-align: justify; font-size: 1.7vw; letter-spacing: 0.05em; line-height: 2.8vw;}
+a{ text-decoration: none; color: #032431; }
+h1, h2, h3, h4 {font-weight: 800; }
+h1{font-size: 9.0vw;}
+h2{font-size: 7vw; text-align: center;}
+h3{font-size: 3vw;}
+h4{font-size: 2.2vw;}
+ol { list-style: none; }
+
+
+.ultimos_viajesRealizados /* ,
+.viajes */ { 
+    width: 100%;
+    min-height: 600px;
+}
+
+
+
+/* SECTION ABOUT, SECTION, ULTIMOS VIAJES, SECTION VIAJES REALIZADOS: PADDING
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.about,
+.ultimos_viajesRealizados,
+.viajes{padding: 8% 0 !important; }
+
+/* SECTION PRINCIPAL, CONTACTO: WRAP 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8% 0 !important;
+}
+
+/* SECTION ABOUT, SECTION, ULTIMOS VIAJES, SECTION VIAJES REALIZADOS: WRAP
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.aboutWrap,
+.utlimosViajes_Wrap,
+.viajesRealizados{ margin: 3vw 10vw;}
+
+/* SECTION PRINCIPAL: BTN CONOCENOS, SECTION CONTACTO: BTN CONTACTAR
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.btnConocenos,
+.btnContactar{
+    padding: 20px 50px;
+    border: 1px solid black;
+    border-radius: 40px;
+    margin-top: 60px;
+    background: #e7edf3;
+}
+.btnConocenos a, .btnContactar a{font-weight: 800; color: #032431;}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------ FONTS & TEXTSTYLES -----------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------*/
+/* SECTION PRINCIPAL: LOGO MENÚ
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.logo h5{ font-family: 'Grandstander'; font-size: 20px;}
+/* SECTION PRINCIPAL: TITULOS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#tituloPrincipal { letter-spacing: -.06em; text-align: center; font-family: 'Grandstander';}
+/* SECTION PRINCIPAL: ENLACES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.menu-items li a {color: white; font-weight: 500; }
+.menu-items li a:hover{ font-weight: bolder; }
+
+
+/* SECTION ABOUT: 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* SECTION UTIMOS VIAJES: 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* SECTION  VIAJES: 
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#nombreCiudad{
+    font-style: italic;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+.post-categories li{
+    font-style: italic;
+    font-weight: 800;
+    color: lightgrey;;
+}
+.post h3{font-size: 28px;}
+/* SECTION CONTACT: TITULOS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.contacto h1{ text-align: center; margin-bottom: 50px;}
+
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------ SECTION - PRINCIPAL ----------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------*/
+.principal{
+    width: 100%;
+    background: url("../img/portada/IMG_3659.jpg");
+    background: linear-gradient(to right, rgb(0 0 0 / 0.5) rgb(0 0 0 / 0) );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.90;
+}
+
+/* SECTION PRINCIPAL: MENU
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.NavMenu{
+    width: 100%;
+    height: 70px;
+    display: block;
+    margin: 0;
+    padding: 0.7rem 0 0.7rem 0;
+    box-shadow: 1px 4px rgb(146 161 176 /15%);
+}
+.checkbox{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    display: block;
+    top: 30px;
+    left: 30px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+#nav-container input[type="checkbox"]:checked ~ .menu-items{ transform: translateX(0); }
+#nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1{ transform: rotate(45deg); }
+#nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2{ transform: scaleY(0); }
+#nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{ transform: rotate(-45deg); }
+
+.hamburger-lines{ 
+    width: 32px;
+    height: 26px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.hamburger-lines .line{
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #032431;
+}
+.hamburger-lines .line1{ transform-origin: 0% 0%; transition: transform 0.4s ease-in-out; }
+.hamburger-lines .line2{ transition: transform 0.2s ease-in-out; }
+.hamburger-lines .line3{ transform-origin: 0% 100%; transition: transform 0.4s ease-in-out; }
+
+.logo{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+.menu-items{
+    width: auto;
+    height: auto;
+    background: slategrey;;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transform: translate(-150%);
+    transition: transform 0.5s ease-in-out;
+    padding-top: 80px;
+    margin-top: -10px;
+}
+.menu-items li{
+    text-align: center;
+    list-style: none;
+    padding: 25px;
+    border-top: 1px solid white;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------ SECTION - ABOUT --------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------*/
+.aboutDescripcion h4, h3, p { margin-bottom: 10px; }
+
+/*-----------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------- SECTION - ULTIMOS VIAJES --------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------*/
+.utlimosViajes_Wrap {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+/* SECTION ULTIMOS VIAJES: POSICIONAMIENTO DE IMAGENES Y TITULOS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.Ciudad1 h5,
+.Ciudad3 h5,
+.Ciudad5 h5{ margin-bottom: 100px; }
+.Ciudad2 h5,
+.Ciudad4 h5{ margin-top: 100px; }
+.ultimaCiudad img{
+    width: 15.5vw;
+    height: 15.5vw;
+    border-radius: 50%;
+    opacity: 55%;
+}
+.ultimaCiudad img:hover{opacity: 100%;}
+
+/*-----------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------- SECTION - VIAJES ------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------*/
+
+input[type="radio"] {
+    position: absolute;
+    left: -9999px;
+}   
+
+/* SECTION VIAJES: FILTERS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.filters {
+    text-align: center;
+    margin-bottom: 2rem;
+} 
+.filters * {
+    display: inline-block;
+}  
+.filters label {
+    padding: 0.5rem 1rem;
+    margin-bottom: 0.25rem;
+    border-radius: 2rem;
+    min-width: 50px;
+    line-height: normal;
+    cursor: pointer;
+    transition: all 0.1s;
+} 
+.filters label:hover {
+    background: white;
+    color: #032431;
+}  
+
+/* SECTION VIAJES: FILTERING RULES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+[value="UltimosViajes"]:checked ~ .filters [for="UltimosViajes"],
+[value="Austria"]:checked ~ .filters [for="Austria"],
+[value="Belgica"]:checked ~ .filters [for="Belgica"],
+[value="Croacia"]:checked ~ .filters [for="Croacia"],
+[value="Spain"]:checked ~ .filters [for="Spain"],
+[value="Italia"]:checked ~ .filters [for="Italia"],
+[value="PaisesBajos"]:checked ~ .filters [for="PaisesBajos"], 
+[value="Portugal"]:checked ~ .filters [for="Portugal"],
+[value="UK"]:checked ~ .filters [for="UK"]{
+    background:green;
+    color: white;
+}
+
+[value="UltimosViajes"]:checked ~ .posts .post:nth-last-child(n+6),
+[value="Austria"]:checked ~ .posts .post:not([data-category~="Austria"]),
+[value="Belgica"]:checked ~ .posts .post:not([data-category~="Belgica"]),
+[value="Croacia"]:checked ~ .posts .post:not([data-category~="Croacia"]),
+[value="Spain"]:checked ~ .posts .post:not([data-category~="Spain"]),
+[value="Italia"]:checked ~ .posts .post:not([data-category~="Italia"]),
+[value="PaisesBajos"]:checked ~ .posts .post:not([data-category~="PaisesBajos"]), 
+[value="Portugal"]:checked ~ .posts .post:not([data-category~="Portugal"]),
+[value="UK"]:checked ~ .posts .post:not([data-category~="UK"]){
+    display: none;
+}
+
+
+/* SECTION VIAJES: POSTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.posts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.post{ margin-bottom: 20px; }
+.containerCiudades{text-align: center;}
+.containerCiudades img{
+    width: 200px;
+    height: 300px;
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------ SECTION - CONTACTAR ----------------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------*/
+

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JD - TRIPS</title>
+    <!--      CSS     -->
+    <link rel="stylesheet" href="css/style.css">
+    <!--      FONTS     -->
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@1,900&display=swap" rel="stylesheet">
+    <!-- LOGO HEAD  -->
+    <link rel="icon" type="image/png" href="img/portada/Open Peeps - logo.png">
+</head>
+<body>
+    <!-- PRINCIPAL: 
+    –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+    <section class="principal">
+        <nav class="NavMenu" id="nav-container" >
+                <input class="checkbox" type="checkbox" name="" id="">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <div class="logo">
+                    <a href="index.html">
+                        <h5>JOSE DAVID - TRIPS</h5>
+                    </a>
+                    
+                </div>
+                <div class="menu-items">
+                    <li><a href="#scroll-about">About</a></li>
+                    <li><a href="#scroll-ultimosViajesRealizados">Ultimos Viajes</a></li>
+                    <li><a href="#scroll-viajes">Viajes</a></li>
+                    <li><a href="#scroll-contacto">Contacto</a></li>
+                </div>
+        </nav>
+        <div class="wrap">
+            <h1 id="tituloPrincipal">JD</h1>
+            <h1 id="tituloPrincipal">TRIPS</h1>
+
+            <p class="btnConocenos">
+                <a class="btn" href="#scroll-about">CONOCENOS</a>
+            </p>
+        </div>
+    </section>
+    <!-- ABOUT: 
+    –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+    <section class="about" id="scroll-about">
+        <h2>ACERCA DE JD - TRIPS </h2>
+        <div class="aboutWrap">
+            <div class="aboutDescripcion">
+                <h4>HOLA</h4>
+                <h3>BIENVENIDOS A JD - TRIPS </h3>
+                <p> Me presento, me llamo Jose David, tengo 24 años y aquí podreis observar todos los viajes que he ido realizando y
+                    así tambien poder ayudaros a vuestros futuros viajes.
+                    Encontraremos imagenes de todas las ciudades visitadas y una pequeña descripcion de dichas imagenes, ya que lo
+                    que quiero no es un simple blog con que hacer en cada sitio, si no que sea más breve y visual.
+                </p>
+                <h4>Pongase comodo y disfrute conmigo de todas las ciudades!!</h4>
+                <h4>¡¡ A VOLAR !!</h4>
+            </div>
+        </div>
+    </section>
+    <!-- ULTIMOS VIAJES: 
+    –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+    <section class="ultimos_viajesRealizados" id="scroll-ultimosViajesRealizados"> 
+        <h2>ULTIMOS VIAJES REALIZADOS</h2>
+        <div class="utlimosViajes_Wrap">
+            <div class="ultimaCiudad Ciudad1">
+                <h5>Milán</h5>
+                <img src="img/viajes/Italia/Milan/Duomo 8.jpg" id="ciudad1">
+            </div>
+            <div class="ultimaCiudad Ciudad2">
+                <img src="img/viajes/Italia/Verona/Arena de Verona.jpeg" id="ciudad2">
+                <h5>Verona</h5>
+            </div>
+            <div class="ultimaCiudad Ciudad3">
+                <h5>Turín</h5>
+                <img src="img/viajes/Italia/Turin/Turin 180.jpeg" id="ciudad3">
+            </div>
+            <div class="ultimaCiudad Ciudad4">
+                <img src="img/viajes/Belgica/Brujas/Markt Brugge.jpeg" id="ciudad4">
+                <h5>Brujas</h5>
+            </div>
+            <div class="ultimaCiudad Ciudad5">
+                <h5>Gante</h5>
+                <img src="img/viajes/Belgica/Gante/Friday Market.jpeg" id="ciudad5">
+            </div>
+        </div>
+    </section>
+    <!-- VIAJES: 
+    –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+    <section class="viajes" id="scroll-viajes">
+        <h2>VIAJES REALIZADOS</h2>
+        <div class="viajesRealizados">
+            <input type="radio" id="UltimosViajes" name="categories" value="UltimosViajes" checked>
+            <input type="radio" id="Austria" name="categories" value="Austria">
+            <input type="radio" id="Belgica" name="categories" value="Belgica">
+            <input type="radio" id="Croacia" name="categories" value="Croacia">
+            <input type="radio" id="Spain" name="categories" value="Spain">
+            <input type="radio" id="Italia" name="categories" value="Italia">
+            <input type="radio" id="PaisesBajos" name="categories" value="PaisesBajos">
+            <input type="radio" id="Portugal" name="categories" value="Portugal">
+            <input type="radio" id="UK" name="categories" value="UK">
+            
+            <ol class="filters">
+                <li> <label for="UltimosViajes">Ultimos Viajes</label></li>
+                <li><label for="Austria">Austria</label></li>
+                <li><label for="Belgica">Belgica</label></li>
+                <li><label for="Croacia">Croacia</label></li>
+                <li><label for="Spain">España</label></li>
+                <li><label for="Italia">Italia</label></li>
+                <li><label for="PaisesBajos">Paises Bajos</label></li>
+                <li><label for="Portugal">Portugal</label></li>
+                <li><label for="UK">UK</label></li>   
+            </ol>
+
+            <ol class="posts">
+                <!-- FUERTEVENTURA -->
+                <li class="post" data-category="Spain">
+                    <article>
+                        <figure>
+                            <h3 id="nombreCiudad">Fuerteventura</h2>
+                            <figcaption>
+                                <ol class="post-categories">
+                                    <li>España</li>
+                                </ol>
+                                <div class="containerCiudades">
+                                    <img src="img/viajes/España/Fuerteventura/Fuerteventura _4903.JPG" alt="Fuerteventura">
+                                    <img src="img/viajes/España/Fuerteventura/Fuerteventura _4971.jpeg" alt="Puerto Castillo">
+                                    <img src="img/viajes/España/Fuerteventura/Fuerteventura _4976.jpeg" alt="Playa del Castillo">
+                                    <img src="img/viajes/España/Fuerteventura/Fuerteventura _5089.jpeg" alt="Fuerteventura">
+                                    <img src="img/viajes/España/Fuerteventura/Fuerteventura _5234.jpeg" alt="Playa del Castillo">
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </li>
+                <!-- LONDON --> 
+                <li class="post" data-category="UK">
+                    <article>
+                        <figure>
+                            <h3 id="nombreCiudad">Londres</h3>
+                            <figcaption>
+                                <ol class="post-categories">
+                                    <li>UK</li>
+                                </ol>
+                                <div class="containerCiudades">
+                                    <img src="img/viajes/UK/London/IMG_7380.jpeg" alt="Tower Bridge">
+                                    <img src="img/viajes/UK/London/IMG_6814.jpg" alt="Camden Market">
+                                    <img src="img/viajes/UK/London/IMG_3895.jpeg" alt="Notting Hill">
+                                    <img src="img/viajes/UK/London/2018-11-02 12_39_06.627_Original.jpg" alt="Stamford Bridge">
+                                    <img src="img/viajes/UK/London/IMG_7048.jpeg" alt="Big Ben" >
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </li>
+                <!-- SPLIT --> 
+                <li class="post" data-category="Croacia">
+                    <article>
+                        <figure>
+                            <h3 id="nombreCiudad">Split</h3>
+                            <figcaption>
+                                <ol class="post-categories">
+                                    <li>Croacia</li>
+                                </ol>
+                                <div class="containerCiudades">
+                                    <img src="img/viajes/Croacia/Split/101ADDB4-8CE2-4DC8-BC32-F51E22A30BD1.jpg" alt="Luka Split">
+                                    <img src="img/viajes/Croacia/Split/1F8A1A59-2673-44F7-86C8-09800B62EB86.jpg" alt="Riva">
+                                    <img src="img/viajes/Croacia/Split/808249D8-A46D-452D-8F8F-FC06B4494876.JPEG" alt="Split">
+                                    <img src="img/viajes/Croacia/Split/IMG_4646.jpg" alt="Luka Split">
+                                    <img src="img/viajes/Croacia/Split/9583E1B0-3F0F-4623-9A8F-62B37DDDD26F.jpg" alt="Trg Republike (Prokurative)">
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </li>
+                <!-- AMSTERDAM --> 
+                <li class="post" data-category="PaisesBajos">
+                    <article>
+                        <figure>
+                            <h3 id="nombreCiudad">Amsterdam</h3>
+                            <figcaption>
+                                <ol class="post-categories">
+                                    <li>Paises Bajos</li>
+                                </ol>
+                                <div class="containerCiudades">
+                                    <img src="img/viajes/Paises Bajos/Amsterdam/16560036-B3AE-4815-9F86-B6F98F6EAC56.jpg" alt="Amsterdam Centraal railway station">
+                                    <img src="img/viajes/Paises Bajos/Amsterdam/68F5D9DA-5BBE-4F79-8CC4-1FEC88144007.jpg" alt="Amsterdam Centraal railway station">
+                                    <img src="img/viajes/Paises Bajos/Amsterdam/IMG_5077.jpg" alt="Barrio rojo de Ámsterdam">
+                                    <img src="img/viajes/Paises Bajos/Amsterdam/IMG_5086.jpg" alt="Barrio rojo de Ámsterdam">
+                                    <img src="img/viajes/Paises Bajos/Amsterdam/IMG_5110.jpg" alt="Amsterdam Centraal railway station">
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </li>
+                <!-- MASPALOMAS -->
+                <li class="post" data-category="Spain">
+                    <article>
+                        <figure>
+                            <h3 id="nombreCiudad">Maspalomas</h3>
+                            <figcaption>
+                                <ol class="post-categories">
+                                    <li>España</li>
+                                </ol>
+                                <div class="containerCiudades">
+                                    <img src="img/viajes/España/Maspalomas/1D466E33-1165-46B3-A021-44808E731F93.jpg" alt="Maspalomas">
+                                    <img src="img/viajes/España/Maspalomas/6FEFAC29-A368-487D-BE5D-0F431C3F8F64.jpg" alt="Dunas Maspalomas">
+                                    <img src="img/viajes/España/Maspalomas/IMG_5156.jpg" alt="Maspalomas">
+                                    <img src="img/viajes/España/Maspalomas/IMG_5308.jpg" alt="Playa del Inglés">
+                                    <img src="img/viajes/España/Maspalomas/029B3735-FEF8-4232-9E70-08BDC33A5BFB.jpg" alt="Faro de Maspalomas">
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </li>
+                <!-- VIENA --> 
+                <li class="post" data-category="Austria">
+                    <article>
+                        <figure>
+                            <h3 id="nombreCiudad">Viena</h3>
+                            <figcaption>
+                                <ol class="post-categories">
+                                    <li>Austria</li>
+                                </ol>
+                                <div class="containerCiudades">
+                                    <img src="img/viajes/Austria/Viena/IMG_1082.jpeg" alt="Hundertwasserhaus">
+                                    <img src="img/viajes/Austria/Viena/IMG_1115.jpeg" alt="Prater">
+                                    <img src="img/viajes/Austria/Viena/IMG_1170.jpeg" alt="Viena">
+                                    <img src="img/viajes/Austria/Viena/IMG_1180.jpeg" alt="Ayuntamiento de Viena">
+                                    <img src="img/viajes/Austria/Viena/IMG_1076.jpeg" alt="Palacio Belvedere">
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </li>
+                <!-- OPORTO --> 
+                <li class="post" data-category="Portugal">
+                    <article>
+                        <figure>
+                            <h3 id="nombreCiudad">Oporto</h3>
+                            <figcaption>
+                                <ol class="post-categories">
+                                    <li>Portugal</li>
+                                </ol>
+                                <div class="containerCiudades">
+                                    <img src="img/viajes/Portugal/Oporto/19997162-E998-4528-A029-623B9729AC4D.jpg" alt="Livraria Lello">
+                                    <img src="img/viajes/Portugal/Oporto/IMG_3322.jpeg" alt="Oporto">
+                                    <img src="img/viajes/Portugal/Oporto/IMG_3308.jpeg" alt="Iglesia de los Carmelitas Descalzos">
+                                    <img src="img/viajes/Portugal/Oporto/IMG_3301.jpeg" alt="Oporto">
+                                    <img src="img/viajes/Portugal/Oporto/IMG_3588.jpeg" alt="Monumento a D. Pedro IV">
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </li>
+                <!-- LISBOA -->
+                <li class="post" data-category="Portugal">
+                    <article>
+                        <figure>
+                            <h3 id="nombreCiudad">Lisboa</h3>
+                            <figcaption>
+                                <ol class="post-categories">
+                                    <li>Portugal</li>
+                                </ol>
+                                <div class="containerCiudades">
+                                    <img src="img/viajes/Portugal/Lisboa/IMG_9860.jpeg" alt="Puente 25 de Abril">
+                                    <img src="img/viajes/Portugal/Lisboa/IMG_9972.jpeg" alt="Torre de Belém">
+                                    <img src="img/viajes/Portugal/Lisboa/IMG_9888.jpeg" alt="LxFactory">
+                                    <img src="img/viajes/Portugal/Lisboa/EA4B6178-7171-4F56-A2CA-3BCBC3BAD806.jpg" alt="Parque Eduardo VII">
+                                    <img src="img/viajes/Portugal/Lisboa/IMG_9872.jpeg" alt="Mirador de Santa Lucía">
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </li> 
+                <!-- MALLORCA -->
+                <li class="post" data-category="Spain">
+                    <article>
+                        <figure>
+                            <h3 id="nombreCiudad">Mallorca</h3>
+                            <figcaption>
+                                <ol class="post-categories">
+                                    <li>España</li>
+                                </ol>
+                                <div class="containerCiudades">
+                                    <img src="img/viajes/España/Mallorca/IMG_0117.jpeg" alt="Catedral-Basílica de Santa María de Mallorca">
+                                    <img src="img/viajes/España/Mallorca/IMG_0300.jpeg" alt="Lonja de Palma">
+                                    <img src="img/viajes/España/Mallorca/IMG_0572.jpeg" alt="Castell de Bellver">
+                                    <img src="img/viajes/España/Mallorca/IMG_0105.jpeg" alt="Carrer de Santo Domingo">
+                                    <img src="img/viajes/España/Mallorca/IMG_0574.jpeg" alt="Mallorca">
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </li>
+                <!-- MENORCA -->
+                <li class="post" data-category="Spain">
+                    <article>
+                        <figure>
+                            <h3 id="nombreCiudad">Menorca</h3>
+                            <figcaption>
+                                <ol class="post-categories">
+                                    <li>España</li>
+                                </ol>
+                                <div class="containerCiudades">
+                                    <img src="img/viajes/España/Menorca/IMG_5654.jpeg" alt="Cala Macarelleta">
+                                    <img src="img/viajes/España/Menorca/IMG_2476.jpeg" alt="Binibeca Vell">
+                                    <img src="img/viajes/España/Menorca/IMG_2427.jpeg" alt="Caló Blanc">
+                                    <img src="img/viajes/España/Menorca/IMG_5985.jpeg" alt="Mirador Pont d'en Gil">
+                                    <img src="img/viajes/España/Menorca/IMG_2694.jpeg" alt="Bambu Menorca">
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </li>
+                <!-- GANTE -->
+                <li class="post" data-category="Belgica">
+                    <article>
+                        <figure>
+                            <h3 id="nombreCiudad">Gante</h3>
+                            <figcaption>
+                                <ol class="post-categories">
+                                    <li>Belgica</li>
+                                </ol>
+                                <div class="containerCiudades">
+                                    <img src="img/viajes/Belgica/Gante/Friday Market.jpeg">
+                                    <img src="img/viajes/Belgica/Gante/IMG_7379.jpeg" alt="Gent Sint Pieters">
+                                    <img src="img/viajes/Belgica/Gante/IMG_7411.jpeg" alt="Gante">
+                                    <img src="img/viajes/Belgica/Gante/IMG_7415.jpeg" alt="Lieve">
+                                    <img src="img/viajes/Belgica/Gante/IMG_7427.jpeg" alt="Graslei">
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </li>
+                <!-- BRUJAS -->
+                <li class="post" data-category="Belgica">
+                    <article>
+                        <figure>
+                            <h3 id="nombreCiudad">Brujas</h3>
+                            <figcaption>
+                                <ol class="post-categories">
+                                    <li>Belgica</li>
+                                </ol>
+                                <div class="containerCiudades">
+                                    <img src="img/viajes/Belgica/Brujas/Markt Brugge.jpeg" alt="Markt Brugge">
+                                    <img src="img/viajes/Belgica/Brujas/IMG_7250.jpeg" alt="Minnewaterpark">
+                                    <img src="img/viajes/Belgica/Brujas/IMG_7277.jpeg" alt="Minnewaterpark">
+                                    <img src="img/viajes/Belgica/Brujas/IMG_7283.jpeg" alt="Brugge">
+                                    <img src="img/viajes/Belgica/Brujas/IMG_7288.jpeg" alt="Grachten">
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </li>
+                <!-- BRUSELAS -->
+                <li class="post" data-category="Belgica">
+                    <article>
+                        <figure>
+                            <h3 id="nombreCiudad">Bruselas</h3>
+                            <figcaption>
+                                <ol class="post-categories">
+                                    <li>Belgica</li>
+                                </ol>
+                                <div class="containerCiudades">
+                                    <img src="img/viajes/Belgica/Bruselas/Atomium.jpeg" alt="Atomium">
+                                    <img src="img/viajes/Belgica/Bruselas/Bruselas_7009.jpeg" alt="Bruselas Street">
+                                    <img src="img/viajes/Belgica/Bruselas/Arco del Triunfo.jpeg" alt="Arco del Triunfo">
+                                    <img src="img/viajes/Belgica/Bruselas/Grand Place.jpeg" alt="Grand Palace">
+                                    <img src="img/viajes/Belgica/Bruselas/Manneken Pis.jpeg" alt="Manneken Pis">
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </li>
+                <!-- TURIN -->
+                <li class="post" data-category="Italia">
+                    <article>
+                        <figure>
+                            <h3 id="nombreCiudad">Turín</h3>
+                            <figcaption>
+                                <ol class="post-categories">
+                                    <li>Italia</a> </li>
+                                </ol>
+                                <div class="containerCiudades">
+                                    <img src="img/viajes/Italia/Turin/Turin 180.jpeg" alt="Chiesa di Santa Maria del Monte dei Cappuccini">
+                                    <img src="img/viajes/Italia/Turin/IMG_1109.jpeg" alt="Museo Egipcio de Turín">
+                                    <img src="img/viajes/Italia/Turin/IMG_1120.jpeg" alt="Galleria Subalpina">
+                                    <img src="img/viajes/Italia/Turin/IMG_1089.jpeg" alt="Fontana del Po">
+                                    <img src="img/viajes/Italia/Turin/IMG_1264.jpeg" alt="Ponte Vittorio Emanuele I">
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </li>
+                <!-- VERONA -->
+                <li class="post" data-category="Italia">
+                    <article>
+                        <figure>
+                            <h3 id="nombreCiudad">Verona</h3>
+                            <figcaption>
+                                <ol class="post-categories">
+                                    <li>Italia</a> </li>
+                                </ol>
+                                <div class="containerCiudades">
+                                    <img src="img/viajes/Italia/Verona/Arena de Verona.jpeg" alt="Arena de Verona">
+                                    <img src="img/viajes/Italia/Verona/IMG_1311.jpeg" alt="Piazza Bra">
+                                    <img src="img/viajes/Italia/Verona/IMG_1337.jpeg" alt="Porta Borsari">
+                                    <img src="img/viajes/Italia/Verona/IMG_1356.jpeg" alt="Casa de Julieta">
+                                    <img src="img/viajes/Italia/Verona/IMG_1376.jpeg" alt="Teatro Romano - Verona Punto panoramico">
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </li>
+                <!-- MILAN -->
+                <li class="post" data-category="Italia">
+                    <article>
+                        <figure>
+                            <h3 id="nombreCiudad">Milán</h3>
+                            <figcaption>
+                                <ol class="post-categories">
+                                    <li>Italia</li>
+                                </ol>
+                                <div class="containerCiudades">
+                                    <img src="img/viajes/Italia/Milan/Duomo 8.jpg" alt="Duomo">
+                                    <img src="img/viajes/Italia/Milan/Bosco Verticale 2.jpg" alt="Bosco Verticale">
+                                    <img src="img/viajes/Italia/Milan/Galleria Vittorio Emanuele 4.jpg" alt="Galleria Vittorio Emanuele">
+                                    <img src="img/viajes/Italia/Milan/Pinacoteca Di Brera 3.jpg" alt="Pinacoteca Di Brera">
+                                    <img src="img/viajes/Italia/Milan/San Siro 19.jpg" alt="Estadio San Siro - Giuseppe Meazza">
+                                </div>
+                            </figcaption>
+                        </figure>
+                    </article>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <!-- CONTACTO: 
+    –––––––––––––––––––––––––––––––––––––––––––––––––– --> 
+    <section class="contacto" id="scroll-contacto">
+        <div class="wrap">
+            <h1>CONTACTA CON NOSOTROS</h1>
+            <h4>Escríbenos a trips.josedavid@gmail.com</h4>
+            <p class="btnContactar">
+                <a class="btn" href="mailto:trips.josedavid@gmail.com">CONTACTAR</a>
+            </p>
+
+        </div>
+    </section>
+</body>
+</html>
